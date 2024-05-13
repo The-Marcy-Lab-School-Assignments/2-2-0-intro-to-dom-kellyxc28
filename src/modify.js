@@ -12,7 +12,9 @@ const getAllMainText = () => {
   console.log(output.join(','));
 };
 
-const setSubtitleText = () => {};
+const setSubtitleText = () => {
+  document.querySelector('#subtitle').textContent = 'This is a subtitle!';
+};
 
 const modifyDivClassList = () => {};
 
