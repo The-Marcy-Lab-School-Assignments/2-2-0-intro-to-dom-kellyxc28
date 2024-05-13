@@ -1,26 +1,20 @@
 const getMainHeadingText = () => {
+  console.log(document.querySelector('#main-heading').textContent);
 };
 
-const getAllMainText = () => {
-};
+const getAllMainText = () => {};
 
-const setSubtitleText = () => {
-};
+const setSubtitleText = () => {};
 
-const modifyDivClassList = () => {
-};
+const modifyDivClassList = () => {};
 
-const addH2 = () => {
-};
+const addH2 = () => {};
 
-const removeOldInfo = () => {
-};
+const removeOldInfo = () => {};
 
-const makeAlphabet = () => {
-};
+const makeAlphabet = () => {};
 
-const makeBio = () => {
-};
+const makeBio = () => {};
 
 // "runner" function
 const main = () => {
@@ -44,4 +38,4 @@ const main = () => {
 };
 
 // invoke the runner!
-main(); 
+main();
