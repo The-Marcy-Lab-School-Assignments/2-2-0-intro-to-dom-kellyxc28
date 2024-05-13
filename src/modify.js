@@ -2,7 +2,15 @@ const getMainHeadingText = () => {
   console.log(document.querySelector('#main-heading').textContent);
 };
 
-const getAllMainText = () => {};
+const getAllMainText = () => {
+  let output = [];
+
+  document
+    .querySelectorAll('.main-text')
+    .forEach((elem) => output.push(elem.textContent));
+
+  console.log(output.join(','));
+};
 
 const setSubtitleText = () => {};
 
