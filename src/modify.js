@@ -64,7 +64,9 @@ const makeAlphabet = () => {
 };
 
 const makeBio = () => {
+  // select the query with the id my-bio
   const bioEl = document.querySelector('#my-bio');
+  // set the element's HTML with the following - did not need to manually code it before
   bioEl.innerHTML = `
   <h2 id="bio-heading">About Me</h2>
   <p>My name is Zo and I like learn cool new things</p>
