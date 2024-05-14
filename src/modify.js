@@ -35,12 +35,12 @@ const removeOldInfo = () => {
 };
 
 const makeAlphabet = () => {
-  const numOfLetters = document.querySelector('data-num-letters');
+  const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   const alphabetList = document.querySelector('#alphabet');
 
-  for (let i = 0; i < numOfLetters; i++) {
+  for (let i = 0; i < alphabetList.dataset.numLetters; i++) {
     let li = document.createElement('li');
-    li.innerText = `${alphabetList[i]} is letter ${i + 1} in the alphabet`;
+    li.textContent = `${alphabet[i]} is letter #${i + 1} in the alphabet`;
     alphabetList.appendChild(li);
   }
 };
