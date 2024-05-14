@@ -7,7 +7,8 @@ const testSuiteName = 'Modify Tests';
 const scoresDir = path.join(__dirname, '..', 'scores');
 const scoreCounter = new ScoreCounter(testSuiteName, scoresDir);
 
-const generateRandomTextString = () => Math.random().toString(36).substring(7).repeat(3);
+const generateRandomTextString = () =>
+  Math.random().toString(36).substring(7).repeat(3);
 const randomHeadingText = generateRandomTextString();
 const randomText1 = generateRandomTextString();
 const randomText2 = generateRandomTextString();
@@ -50,7 +51,9 @@ describe(testSuiteName, () => {
   });
 
   it('reads and logs the main text together in a comma separated string', () => {
-    expect(log).toHaveBeenCalledWith(`${randomText1},${randomText2},${randomText3}`);
+    expect(log).toHaveBeenCalledWith(
+      `${randomText1},${randomText2},${randomText3}`
+    );
 
     scoreCounter.correct(expect); // DO NOT TOUCH
   });
@@ -103,7 +106,9 @@ describe(testSuiteName, () => {
 
     for (let i = 0; i < numLetters; i++) {
       const letterInfoEl = alphabetList.children[i];
-      expect(letterInfoEl.textContent).toBe(`${alphabet[i]} is letter #${i + 1} in the alphabet`);
+      expect(letterInfoEl.textContent).toBe(
+        `${alphabet[i]} is letter #${i + 1} in the alphabet`
+      );
     }
 
     scoreCounter.correct(expect); // DO NOT TOUCH
@@ -111,7 +116,8 @@ describe(testSuiteName, () => {
 
   it('Add the bio content to the page', () => {
     const bioEl = document.querySelector('#my-bio');
-    expect(bioEl.innerHTML.replaceAll(" ", "")).toBe(`
+    expect(bioEl.innerHTML.replaceAll(' ', '')).toBe(
+      `
     <h2 id="bio-heading">About Me</h2>
     <p>My name is Zo and I like learn cool new things</p>
     <h3 id="hobby-heading">My Hobbies</h3>
@@ -119,7 +125,8 @@ describe(testSuiteName, () => {
       <li>Running</li>
       <li>Reading</li>
       <li>Writing</li>
-    </ul>`.replaceAll(" ", ""));
+    </ul>`.replaceAll(' ', '')
+    );
 
     scoreCounter.correct(expect); // DO NOT TOUCH
   });
