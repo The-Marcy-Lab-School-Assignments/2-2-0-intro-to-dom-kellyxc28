@@ -16,8 +16,8 @@ const addP = () => {
   p.textContent = "Look, I'm some text!";
   // set the id attribute with the value main-text
   p.setAttribute('id', 'main-text');
-  // set the class attribute with the value  boring-text
-  p.setAttribute('className', ' boring-text');
+  // set the class attribute with the value boring-text
+  p.className = 'boring-text';
   // add this p (child) to the body (parent)
   document.body.appendChild(p);
 };
@@ -26,6 +26,7 @@ const addP = () => {
 const main = () => {
   // create
   addH1();
+  addP();
 };
 
 // invoke the runner!
