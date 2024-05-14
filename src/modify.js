@@ -64,37 +64,16 @@ const makeAlphabet = () => {
 };
 
 const makeBio = () => {
-  // h2 element
-  const h2 = document.createElement('h2');
-  // give it this text
-  h2.innerHTML = 'About Me';
-  // set the id attribute with the value h2-test
-  h2.setAttribute('id', 'bio-heading');
-  // add this h2 (child) to the body (parent)
-  document.body.appendChild(h2);
-
-  // p element
-  const p = document.createElement('p');
-  p.innerHTML = 'My name is Zo and I like learn cool new things';
-  document.body.appendChild(p);
-
-  // h3 element
-  const h3 = document.createElement('h3');
-  h3.innerHTML = 'My Hobbies';
-  h3.setAttribute('id', 'hobby-heading');
-  document.body.appendChild(h3);
-
-  // ul element
-  const ul = document.createElement('ul');
-  document.body.appendChild(ul); // empty for now
-
-  // adding li elements under ul element
-  const hobbies = ['Running', 'Reading', 'Writing'];
-  hobbies.forEach((hobby) => {
-    let li = document.createElement('li');
-    li.innerText = hobby;
-    ul.append(li);
-  });
+  const bioEl = document.querySelector('#my-bio');
+  bioEl.innerHTML = `
+  <h2 id="bio-heading">About Me</h2>
+  <p>My name is Zo and I like learn cool new things</p>
+  <h3 id="hobby-heading">My Hobbies</h3>
+  <ul>
+    <li>Running</li>
+    <li>Reading</li>
+    <li>Writing</li>
+  </ul>`;
 };
 
 // "runner" function
