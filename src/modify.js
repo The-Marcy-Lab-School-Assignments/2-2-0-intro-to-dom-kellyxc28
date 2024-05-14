@@ -16,7 +16,11 @@ const setSubtitleText = () => {
   document.querySelector('#subtitle').textContent = 'This is a subtitle!';
 };
 
-const modifyDivClassList = () => {};
+const modifyDivClassList = () => {
+  const list = document.querySelector('#modify-classes').classList;
+  list.remove('bad-class');
+  list.add('new-class');
+};
 
 const addH2 = () => {};
 
