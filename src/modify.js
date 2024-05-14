@@ -22,7 +22,12 @@ const modifyDivClassList = () => {
   list.add('new-class');
 };
 
-const addH2 = () => {};
+const addH2 = () => {
+  const h2 = document.createElement('h2');
+  h2.innerHTML = 'Another one!';
+  h2.setAttribute('id', 'h2-test');
+  document.body.appendChild(h2);
+};
 
 const removeOldInfo = () => {};
 
