@@ -29,7 +29,10 @@ const addH2 = () => {
   document.body.appendChild(h2);
 };
 
-const removeOldInfo = () => {};
+const removeOldInfo = () => {
+  const removingElem = document.getElementById('old-info');
+  removingElem.remove();
+};
 
 const makeAlphabet = () => {};
 
