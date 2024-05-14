@@ -34,7 +34,16 @@ const removeOldInfo = () => {
   removingElem.remove();
 };
 
-const makeAlphabet = () => {};
+const makeAlphabet = () => {
+  const numOfLetters = document.querySelector('data-num-letters');
+  const alphabetList = document.querySelector('#alphabet');
+
+  for (let i = 0; i < numOfLetters; i++) {
+    let li = document.createElement('li');
+    li.innerText = `${alphabetList[i]} is letter ${i + 1} in the alphabet`;
+    alphabetList.appendChild(li);
+  }
+};
 
 const makeBio = () => {};
 
