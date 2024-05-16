@@ -1,3 +1,7 @@
+/** FEEDBACK: I love the use of functions here! Could we have made it DRYer? 
+ * Great job using the runner function and getting all test cases to pass!
+ */
+
 const addH1 = () => {
   // create a h1 element
   const h1 = document.createElement('h1');

@@ -1,3 +1,4 @@
+/** FEEDBACK: Great job! Love all of the comments! */
 const getMainHeadingText = () => {
   // select the query with the id main-heading, access its text
   console.log(document.querySelector('#main-heading').textContent);
